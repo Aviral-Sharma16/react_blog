@@ -20,12 +20,12 @@ const BlogList = ({posts,setPosts}) => {
         const getPosts = async() => {
             SetLoading(true);
             try{
-                const response = await axios.get('https://newsapi.org/v2/everything',{
+                const response = await axios.get('http://localhost:5000/api/news',{
                     params: {
-                        q:'technology',
-                        pageSize:5,
+                        //q:'technology',
+                        //pageSize:5,
                         page:page,
-                        apiKey: process.env.REACT_APP_NEWS_API_KEY,
+                        //apiKey: process.env.REACT_APP_NEWS_API_KEY,
                     },
                 });
                 console.log('API Response: ',response.data);

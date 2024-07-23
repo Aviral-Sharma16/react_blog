@@ -14,7 +14,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://Aviral_Sharma.github.io/react-blog",
+  "homepage": "http://Aviral-Sharma16.github.io/react_blog",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -45,5 +45,7 @@
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "gh-pages": "^6.1.1"
-  }
+  },
+  "proxy": "https://newsapi.org"
+
 }

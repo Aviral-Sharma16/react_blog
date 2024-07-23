@@ -8,7 +8,7 @@ const App = () => {
   const[posts,setPosts] = useState([]);
 
   return(
-    <Router basename="/react-blog">
+    <Router basename="/react_blog">
       <Routes>
         <Route path = "/" element={<BlogList posts={posts} setPosts={setPosts}/>}/>
         <Route path="/post/:id" element={<BlogDetail posts={posts}/>}/>

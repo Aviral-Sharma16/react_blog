@@ -14,9 +14,9 @@ const BlogDetail = ({posts}) =>{
 
     return(
         <div>
-            <Button onClick={() => navigate('/')}>Back</Button>
+            <Button onClick={() => navigate('-1')}>Back</Button>
             <h2>{post.title}</h2>
-            <p>{post.content}</p>
+            <p>{post.content ? post.content : post.description}</p>
             {post.urlToImage && <img src={post.urlToImage} alt={post.title}/>}
         </div>
     );
